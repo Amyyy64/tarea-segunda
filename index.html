@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-image: url("rainybg.webp");
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        
+        <title>To Do List</title>
+        <h1>My To Do List</h1>
+    </head>
+
+    <body>  
+        <!--list-->      
+        <div class="right">
+            <!--add task-->
+            <div class="plan">
+                <p>Today's Plan</p>
+
+                <input type="text" id="task" placeholder="Add a To Do">
+                <button onclick="addTask()">Add</button>
+
+                <ul id="myUL">
+                    <!--<li class="checked">task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--timer-->
+        <div class="left">
+                <div class="timer">
+                    <p>Timer</p>
+
+                    <span class="timerPart timerPartMinutes">00</span>
+                    <span class="timerPart">:</span>
+                    <span class="timerPart timerPartSeconds">00</span><br>
+
+                    <button type="button" class="timerBtn timerBtnReset">Reset</button>
+                    <button type="button" class="timerBtn timerBtnControl timerBtnStart">Start</button>
+
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
